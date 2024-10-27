@@ -103,7 +103,7 @@ static void thermalMgr(void *pvParameters)
       }
       else
         {
-          LOG_ERxROR(ERR_CODE_INVALID_EVENT);
+          LOG_ERROR(ERR_CODE_INVALID_EVENT);
         }
     }
   }
