@@ -37,7 +37,7 @@ error_code_t readTempLM75BD(uint8_t devAddr, float *temp)
   }
 
   uint8_t tempaddr = 0x00;
-  uint8_t reading[2];
+  uint8_t reading[2] = {0};
 
   RETURN_IF_ERROR_CODE(i2cSendTo(devAddr, &tempaddr, sizeof(tempaddr)));
 
